@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scissors, paper, rock</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Scissors Paper Rock</h1>
+    <h2>Your Score: <span id="score">0</span></h2>
+    <h2>Computer Score: <span id="comscore">0</span></h2>
+    <div id="main-section">
+        <div id="com">
+            <div class="image">
+                <img id='comImg' src="./images/paper.png" alt="">
+            </div>
+            <h1>Computer</h1>
+        </div>
+        <div id="player">
+            <div class="image">
+                <img id='playerImg' src="./images/paper.png" alt="">
+            </div>
+            <h1>Player</h1>
+        </div>
+    </div>
+
+    <div id="restart-section">
+        <h1 id="wnl">You Win</h1>
+        <h2>Play Again?</h2>
+        <a id='restart-button' onclick="restart()" href="#"><img src="./images/rotate-cw.png" alt="restartbtn"></a>
+    </div>
+
+    <div id="button-section">
+        <button onclick="left()">left</button>
+        <button id="shoot-button" onclick="playGame()">Shoot</button>
+        <button onclick="right()">Right</button>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>
