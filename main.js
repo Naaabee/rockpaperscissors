@@ -97,5 +97,5 @@ function restart() {
     playerChoice = document.getElementById('playerImg').src=images[0];
     computerChoice = document.getElementById('comImg').src=images[0];
     document.getElementById('shoot-button').disabled = false;
-    console.log(int)
+    //console.log(int)
 }
